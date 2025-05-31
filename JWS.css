@@ -1,0 +1,199 @@
+@import url(https://db.onlinewebfonts.com/c/1a8d4ff3cf8a0fceded5a7d806c9726e?family=Kaleko+105+Round+W01+Bold);
+@font-face {
+    font-family: "Kaleko 105 Round W01 Bold";
+    src: url("Web Fonts/1a8d4ff3cf8a0fceded5a7d806c9726e.eot");
+    src: url("Web Fonts/1a8d4ff3cf8a0fceded5a7d806c9726e.eot?#iefix") format("embedded-opentype"),
+         url("Web Fonts/1a8d4ff3cf8a0fceded5a7d806c9726e.woff2") format("woff2"),
+         url("Web Fonts/1a8d4ff3cf8a0fceded5a7d806c9726e.woff") format("woff"),
+         url("Web Fonts/1a8d4ff3cf8a0fceded5a7d806c9726e.ttf") format("truetype"),
+         url("Web Fonts/1a8d4ff3cf8a0fceded5a7d806c9726e.svg#Kaleko 105 Round W01 Bold") format("svg");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Ethnocentric';
+    src: url('fonts/Ethnocentric-Regular.eot'); /* IE9 Compat Modes */
+    src: url('fonts/Ethnocentric-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/Ethnocentric-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('fonts/Ethnocentric-Regular.woff') format('woff'), /* Modern Browsers */
+         url('fonts/Ethnocentric-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('fonts/Ethnocentric-Regular.svg#Ethnocentric') format('svg'); /* Legacy iOS */
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+body {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin: auto;
+  padding: 0;
+  background-color: #636363;
+  background-image: url('BACKGROUND.png');
+  background-size: auto;
+  max-width: 1000px;
+  min-width: 500px;
+  max-height: 1000px;
+  color: white;
+}
+.name {
+    font-size: 20px;
+    letter-spacing: 9px;
+    font-family: "Kaleko 105 Round W01 Bold";
+}
+header {
+    margin: 20px auto 10px;
+    padding: 15px 0 25px; 
+    width: 70vmin;
+    max-width: 600px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.6);
+    backdrop-filter: blur(8px);
+}
+.jpic {
+    margin-top: 2%;
+}
+h1 {
+    font-family: 'ethnocentric', Arial, sans-serif;
+    background-image: url('JBG.jpg');
+    font-size: 3rem;
+    color: white;
+    margin: auto;
+    padding: 10px 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-shadow: 1px 1px 4px black;
+    border-radius: 8px;
+    letter-spacing: 0.06em;
+    line-height: 1.1;
+  }
+  h2 {
+    font-family: 'ethnocentric', Arial, sans-serif;
+    margin-top: 0%;
+    font-size: 180%;
+    letter-spacing:5px;
+}
+  header p {
+    font-size: 1.15rem;
+    margin: 0 auto;
+    max-width: 500px;
+    line-height: 1.5;
+    font-weight: 500;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.75);
+  }
+
+h3 {
+    font-family: 'ethnocentric', Arial, sans-serif;
+  }
+header p, .intro p {
+  width: 70vmin;
+  margin: 0 auto 20px auto;
+  font-size: 1.1em;
+}
+.intro, .media {
+  margin: 20px auto;
+  padding: 10px;
+  width: 80vmin;
+  border-radius: 5px;
+  background-color: rgba(0,0,0,0.25);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+.pred {
+  font-family: "Kaleko 105 Round W01 Bold";
+    color:rgb(109, 29, 45);
+    font-weight: bold;
+    margin-bottom: -1%;
+}
+.predu {
+  font-family: "Kaleko 105 Round W01 Bold";
+    color:rgb(109, 29, 45);
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: -1%;
+}
+.pwhiteu {
+  font-family: "Kaleko 105 Round W01 Bold";
+    color: white;
+    text-decoration: underline;
+}
+.ht {
+    width: 15em;
+}
+.hf {
+  width: 10em;
+}
+.picture {
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+.picture:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 12px rgba(0,0,0,0.6);
+}
+.zoomed {
+      transform:scale(5) !important;
+      z-index: 9999 !important;
+      box-shadow: 0 15px 25px rgba(0,0,0,0.8) !important;
+      cursor: zoom-out !important;
+      transition: transform 0.4s ease, top 0.4s ease, left 0.4s ease;
+      background-color: #636363;
+    }
+footer {
+  text-align: center;
+  padding: 20px;
+  color:rgb(109, 29, 45);
+  background-color: rgba(131, 131, 131, 0.4);
+  background-image: url("TOOLS\ I\ USE\ IMAGES\ PNG.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 40px;
+  padding-bottom: 75px;
+  font-size: 0.9em;
+  min-width: 1000px;
+}
+a {
+  color: #0099cc;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+@media (min-width: 700px) {
+    .picture {
+      width: 22%;
+    }
+    header p, .intro p {
+      font-size: 1.25rem;
+    }
+    footer {
+      font-size: 1.1rem;
+    }
+  }
+  @media (max-width: 400px) {
+    h1 {
+      font-size: 1.8rem;
+      width: 90vw;
+    }
+    h2 {
+      font-size: 1.5rem;
+    }
+    .intro, .media {
+      width: 95vw;
+      padding: 10px;
+    }
+    .picture {
+      width: 90vw;
+      max-width: none;
+    }
+  }
