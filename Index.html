@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Jeric's Portfolio</title>
+  <link rel="stylesheet" href="JWS.css">
+
+</head>
+<body>
+  <header>
+    <span class="name" style="margin-right: 30%;">J r c</span><span class="name" style="margin-left: 30%;">A r n z</span>
+    <h1>MY PORTFOLIO</h1>
+    <h2 style="color: rgb(156, 0, 0);">WELCOME TO MY WORLD</h2>
+    <img src="JERIC PHOTO.jpg" class="jpic" style="width: 30em;">
+    <p class="pred">Hi, I’m Jeric! </p>
+    <p class="predu">A Graphic Designer,
+    <br>Graphic Artist,
+    <br>3D Animator,
+    <br>2D Animator,
+    <br>and Video Editor.</p>
+  </header>
+  <section class="intro">
+    <img src="ABOUT ME.jpg" style="width: 20%;">
+    <p class="pred">With a passion for creating eye-catching visuals and compelling stories, I thrive on blending creativity with technical skill. Whether I’m sketching, animating, or refining my next project, I’m always looking for ways to spark creativity and connect with people through my work.</p>
+  </section>
+  <section class="media">
+    <h3>My Work</h3>
+    <h3>Click to view</h3>
+    <h4 class="pwhiteu">As a Graphic Designer/ Artist</h3>
+    <img style="width: 225px;" class="ht" src="LOGO MAKING.jpg" alt="">
+    <div>
+        <img src="LOGO MAKING IMAGES PNG.png" alt="Logo Making" class="picture" />
+    </div>
+    <img style="width: 150px;" class="ht" src="LAYOUTS.jpg" alt="">
+    <div>
+        <img src="LAYOUT IMAGES PNG.png" alt="Layouts" class="picture" />
+    </div>
+    <h4 class="pwhiteu">As a 2D/3D animator</h3>
+    <img class="ht" src="3D 2D MODELING.jpg" alt="">
+    <div>
+        <img src="3D 2D MODELING IMAGES PNG.png" alt="3D Modeling" class="picture" />
+    </div>
+    <img class="ht" src="3D 2D ANIMATION.jpg" alt="">
+    <div>
+      <img src="3D 2D ANIMATION IMAGES PNG.png" alt="3D Animation" class="picture" />
+    </div> 
+  </section>
+  <footer>
+    <img class="hf" src="TOOLS I USE.jpg" alt="Tools I Use">
+    <br>
+    <img style="margin-top: 95px;" class="hf" src="CONTACT ME.jpg" alt="Contact Me">
+    <p><a href="mailto:arnezjeric24@gmail.com">arnezjeric24@gmail.com</a>&nbsp;&nbsp;&nbsp; Phone: +63995 829 2908</p>
+    <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+</footer>
+  <script>
+    document.querySelectorAll('.picture').forEach(img => {
+      img.addEventListener('click', () => {
+        if(img.classList.contains('zoomed')) {
+          img.classList.remove('zoomed');
+        } else {
+          document.querySelectorAll('.picture.zoomed').forEach(otherImg => otherImg.classList.remove('zoomed'));
+          img.classList.add('zoomed');
+        }
+      });
+    });
+    img.addEventListener('mouseleave', () => {
+        if(img.classList.contains('zoomed')) {
+          img.classList.remove('zoomed');
+        }
+      });
+    document.body.addEventListener('click', (e) => {
+      if(!e.target.classList.contains('picture')) {
+        document.querySelectorAll('.picture.zoomed').forEach(img => img.classList.remove('zoomed'));
+      }
+    });
+  </script>
+</body>
+</html>
+
